@@ -2,7 +2,7 @@
 
 CC = g++
 SOURCE = clases
-OBJ = rodemmanuel.o
+OBJ = amigos.o
 OUT = output.bin
 OUTDIR = bin
 CFLAGS = -I./$(SOURCE) -c -Wall
@@ -14,8 +14,8 @@ edit: $(OBJ)
 	$(MKDIR) $(OUTDIR)
 	$(CC) -o $(OUTDIR)/$(OUT) $(OBJ)
 
-rodemmanuel.o: rodemmanuel.cpp
-	$(CC) $(CFLAGS) rodemmanuel.cpp
+amigos.o: amigos.cpp
+	$(CC) $(CFLAGS) amigos.cpp
 
 .PHONY: clean
 clean:
