@@ -4,3 +4,4 @@ A 0 2 5
 A 2 1 5
 Q GA
 Q TA
+Q CM 0 2 5

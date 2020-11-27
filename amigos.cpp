@@ -26,15 +26,25 @@ using namespace std;
  * usos.
  */
 struct Cliquedata {
+    //arreglo de datos como vector de adyacencia
     vector <vector <pair<int,int>>> data;
+    //utilizado para almacenar el nodo maximo
     int tamano = 0;
+    //mascara que mantiene tracking de cambios
     unsigned long int cambios = 0;
 
+    //array para almacenar visitas de clique maximo
     int *visitado;
+    //array para almacenar resultados de clique maximo
     bool *esClique;
+    //matriz de adyacencia
     vector <vector <int>> matriz;
+    //par que guarda el clique maximo
     pair <int, unsigned long int> maximo;
 
+    /**
+     * Inicializa el objeto para los parametros específicos del problema
+     */
     Cliquedata (int N){
         tamano = N;
         data.resize(N);
@@ -46,6 +56,9 @@ struct Cliquedata {
         }
     }
 
+    /**
+     * Libera la memoria de los punteros
+     */
     ~Cliquedata(){//eliminar la cache
         delete[] visitado;
         delete[] esClique;

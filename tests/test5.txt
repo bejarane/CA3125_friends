@@ -1,0 +1,25 @@
+11 24
+A 1 3 4
+A 1 2 1
+A 2 3 2
+A 4 5 2
+A 4 6 4
+A 5 6 1
+A 6 7 4
+A 8 9 15
+A 8 10 5
+Q GA
+Q GA
+Q GA
+Q GA
+Q GA
+Q TA
+Q TA
+Q TA
+Q TA
+Q TA
+Q CM 1 3 2
+Q CM 1 3 2
+Q CM 1 3 2
+Q CM 1 3 2
+Q CM 1 3 2
